@@ -4,12 +4,3 @@
 [submodule "externals/ouya-csharp"]
 	path = externals/ouya-csharp
 	url = https://github.com/dmanning23/ouya-csharp.git
-[submodule "externals/FontBuddy"]
-	path = externals/FontBuddy
-	url = https://github.com/dmanning23/FontBuddy.git
-[submodule "externals/GameTimer"]
-	path = externals/GameTimer
-	url = https://github.com/dmanning23/GameTimer.git
-[submodule "externals/HadoukInput"]
-	path = externals/HadoukInput
-	url = https://github.com/dmanning23/HadoukInput.git
