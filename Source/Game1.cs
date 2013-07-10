@@ -80,7 +80,7 @@ namespace RawControllerWrapperSample
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
 			// TODO: use this.Content to load your game content here
-			_text.LoadContent(Content, "TestFont");
+			_text.LoadContent(Content, "ArialBlack10");
 		}
 
 		/// <summary>
