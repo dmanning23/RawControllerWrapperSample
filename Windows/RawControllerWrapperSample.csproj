@@ -62,13 +62,7 @@
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Net" />
-    <Reference Include="MonoGame.Framework, Version=3.0.1.0, Culture=neutral">
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,4 +112,14 @@
       <Target Name="AfterBuild">
       </Target>
     -->
+  <ItemGroup>
+    <ProjectReference Include="..\externals\MonoGame\ThirdParty\Lidgren.Network\Lidgren.Network.Windows.csproj">
+      <Project>{AE483C29-042E-4226-BA52-D247CE7676DA}</Project>
+      <Name>Lidgren.Network.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
+      <Project>{7DE47032-A904-4C29-BD22-2D235E8D91BA}</Project>
+      <Name>MonoGame.Framework.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
