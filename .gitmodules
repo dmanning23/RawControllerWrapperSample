@@ -16,3 +16,12 @@
 [submodule "externals/XNA"]
 	path = externals/XNA
 	url = https://github.com/dmanning23/XnaCompiledResources.git
+[submodule "externals/XmlBuddy"]
+	path = externals/XmlBuddy
+	url = git@github.com:dmanning23/XmlBuddy.git
+[submodule "externals/Filename"]
+	path = externals/Filename
+	url = git@github.com:dmanning23/Filename.git
+[submodule "externals/MatrixExtensions"]
+	path = externals/MatrixExtensions
+	url = git@github.com:dmanning23/MatrixExtensions.git
