@@ -41,7 +41,7 @@ namespace RawControllerWrapperSample
 
 		private GameClock _clock;
 
-		private InputState m_Input = new InputState();
+		private InputState _input = new InputState();
 
 		public Game1()
 		{
@@ -101,8 +101,8 @@ namespace RawControllerWrapperSample
 
 			//Update the controller
 			_clock.Update(gameTime);
-			m_Input.Update();
-			_controller.Update(m_Input);
+			_input.Update();
+			_controller.Update(_input);
 
 			//update all those timers
 			var keystrokes = Enum.GetValues(typeof(EKeystroke));
@@ -174,6 +174,9 @@ namespace RawControllerWrapperSample
 			position = new Vector2(0, 380);
 			position.X = _text.Write("direction: ", position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
 			position.X = _text.Write(_controller.Thumbsticks.LeftThumbstick.Direction.ToString(), position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
+
+			position = new Vector2(0, 400);
+			position.X = _text.Write($"buttons: {_input._currentGamePadStates[0].Buttons}", position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
 
 			spriteBatch.End();
 

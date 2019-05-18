@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RawControllerWrapperSample.SharedProject", "RawControllerWrapperSample.SharedProject\RawControllerWrapperSample.SharedProject.shproj", "{7DB8031A-C27B-4898-9146-6C1DB5C7FE78}"
 EndProject
