@@ -1,15 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.156
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RawControllerWrapperSample.SharedProject", "RawControllerWrapperSample.SharedProject\RawControllerWrapperSample.SharedProject.shproj", "{7DB8031A-C27B-4898-9146-6C1DB5C7FE78}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RawControllerWrapperSample.WindowsDX", "RawControllerWrapperSample.WindowsDX\RawControllerWrapperSample.WindowsDX.csproj", "{0ABD0F5F-2351-4F2B-952C-26FDA0A1028D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RawControllerWrapperSample.Android", "RawControllerWrapperSample.Android\RawControllerWrapperSample.Android.csproj", "{588D28D9-CAE1-413E-A603-8491EC0DD5AE}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		RawControllerWrapperSample.SharedProject\RawControllerWrapperSample.SharedProject.projitems*{0abd0f5f-2351-4f2b-952c-26fda0a1028d}*SharedItemsImports = 4
+		RawControllerWrapperSample.SharedProject\RawControllerWrapperSample.SharedProject.projitems*{588d28d9-cae1-413e-a603-8491ec0dd5ae}*SharedItemsImports = 4
 		RawControllerWrapperSample.SharedProject\RawControllerWrapperSample.SharedProject.projitems*{7db8031a-c27b-4898-9146-6c1db5c7fe78}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +29,18 @@ Global
 		{0ABD0F5F-2351-4F2B-952C-26FDA0A1028D}.Release|Any CPU.ActiveCfg = Release|x86
 		{0ABD0F5F-2351-4F2B-952C-26FDA0A1028D}.Release|x86.ActiveCfg = Release|x86
 		{0ABD0F5F-2351-4F2B-952C-26FDA0A1028D}.Release|x86.Build.0 = Release|x86
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Debug|x86.Build.0 = Debug|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Release|x86.ActiveCfg = Release|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Release|x86.Build.0 = Release|Any CPU
+		{588D28D9-CAE1-413E-A603-8491EC0DD5AE}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
