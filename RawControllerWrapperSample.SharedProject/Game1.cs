@@ -48,7 +48,7 @@ namespace RawControllerWrapperSample
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
 
-			_controller = new ControllerWrapper(PlayerIndex.One, true);
+			_controller = new ControllerWrapper(0);
 
 			_clock = new GameClock();
 
@@ -166,7 +166,7 @@ namespace RawControllerWrapperSample
 				{
 					position.Y = 0;
 				}
-				position.Y += _text.Font.MeasureString(((EKeystroke)i).ToString()).Y;
+				position.Y += _text.MeasureString(((EKeystroke)i).ToString()).Y;
 				position.X = (i / ((int)EKeystroke.RTrigger)) * 180;
 			}
 
