@@ -1,22 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using HadoukInput;
 using FontBuddyLib;
 using GameTimer;
+using HadoukInput;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Content;
+using System;
 
 namespace RawControllerWrapperSample
 {
 	/// <summary>
 	/// This dude just verifies that all the buttons are being checked correctly on down, held, up
 	/// </summary>
-	public class Game1 : Microsoft.Xna.Framework.Game
+	public class Game1 : Game
 	{
-		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
 		/// <summary>
@@ -45,7 +40,7 @@ namespace RawControllerWrapperSample
 
 		public Game1()
 		{
-			graphics = new GraphicsDeviceManager(this);
+			var _ = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
 
 			_controller = new ControllerWrapper(0);
@@ -78,27 +73,12 @@ namespace RawControllerWrapperSample
 		}
 
 		/// <summary>
-		/// UnloadContent will be called once per game and is the place to unload
-		/// all content.
-		/// </summary>
-		protected override void UnloadContent()
-		{
-			// TODO: Unload any non ContentManager content here
-		}
-
-		/// <summary>
 		/// Allows the game to run logic such as updating the world,
 		/// checking for collisions, gathering input, and playing audio.
 		/// </summary>
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		protected override void Update(GameTime gameTime)
 		{
-			// Allows the game to exit
-			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-				this.Exit();
-
-			// TODO: Add your update logic here
-
 			//Update the controller
 			_clock.Update(gameTime);
 			_input.Update();
@@ -172,11 +152,15 @@ namespace RawControllerWrapperSample
 
 			//write the raw thumbstick direction
 			position = new Vector2(0, 380);
-			position.X = _text.Write("direction: ", position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
+			position.X = _text.Write("L direction: ", position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
 			position.X = _text.Write(_controller.Thumbsticks.LeftThumbstick.Direction.ToString(), position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
 
 			position = new Vector2(0, 400);
-			position.X = _text.Write($"buttons: {_input._currentGamePadStates[0].Buttons}", position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
+			position.X = _text.Write("R direction: ", position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
+			position.X = _text.Write(_controller.Thumbsticks.RightThumbstick.Direction.ToString(), position, Justify.Left, 1.0f, Color.White, spriteBatch, _clock);
+
+			position = new Vector2(0, 420);
+			position.X = _text.Write($"buttons: {_input._currentGamePadStates[0].Buttons}", position, Justify.Left, 0.7f, Color.White, spriteBatch, _clock);
 
 			spriteBatch.End();
 
